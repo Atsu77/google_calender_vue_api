@@ -1,0 +1,27 @@
+@startuml er
+skinparam monochrome true 
+skinparam shadowing false
+
+entity calendars {
+  + id
+  --
+  name
+  color
+  visibility
+}
+
+entity events {
+  + id
+  --
+  # caledendar_id
+  start
+  end
+  timed
+  description
+  color
+}
+
+calendars ||-r-o{ events
+
+
+@enduml 

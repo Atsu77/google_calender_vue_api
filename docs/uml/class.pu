@@ -1,0 +1,31 @@
+@startuml class
+skinparam monochrome true 
+skinparam shadowing false
+
+Class カレンダー {
+  名前: string
+  色: string
+  表示するかどうか: boolean
+
+  作成する()
+  編集する()
+  削除する()
+}
+
+Class イベント {
+  名前: string
+  開始時刻: Date
+  終了時刻: Date
+  終日かどうか: boolean
+  詳細: string
+  色: string
+
+  作成する()
+  詳細を見る()
+  編集する()
+  削除する()
+}
+
+カレンダー -r- イベント : 1..*
+
+@enduml 
