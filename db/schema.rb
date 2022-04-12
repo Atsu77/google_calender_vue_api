@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2022_04_11_105757) do
     t.string "name", limit: 100, null: false
     t.datetime "start", null: false
     t.datetime "end", null: false
-    t.boolean "timed", null: false
+    t.boolean "timed"
     t.text "description"
     t.string "color"
     t.datetime "created_at", precision: 6, null: false
